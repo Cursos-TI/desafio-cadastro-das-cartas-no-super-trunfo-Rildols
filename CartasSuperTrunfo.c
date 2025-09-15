@@ -1,13 +1,11 @@
 #include <stdio.h>
 
 int main() {
-
-    printf("Desafio Cartas Super Trunfo \n");
-
     // Declaração de variáveis das cartas
     int Habitantes1, Habitantes2, Pontosturisticos1, Pontosturisticos2;
-    float Area1, Area2, PIB1, PIB2;
+    float Area1, Area2, PIB1, PIB2, Densidade1, Densidade2, Capita1, Capita2;
     char Estado1[20], Estado2[20], Cod_Carta1[5], Cod_Carta2[5], Cidade1[20], Cidade2[20];
+
 
     // Entrada de dados
 
@@ -34,6 +32,9 @@ int main() {
     printf("Digite a quantidade de Pontos Turísticos da primeira Cidade: ");
     scanf("%d", &Pontosturisticos1);
 
+    Densidade1 = Habitantes1 / Area1;
+    Capita1 = PIB1 / Habitantes1;
+
     printf("Cadastro da Segunda Carta \n");
 
     printf("Digite o nome do segundo Estado: ");
@@ -56,7 +57,10 @@ int main() {
 
     printf("Digite a quantidade de Pontos Turísticos da segunda Cidade: ");
     scanf("%d", &Pontosturisticos2);
-    
+
+    Densidade2 = Habitantes2 / Area2;
+    Capita2 = PIB2 / Habitantes2;
+
     // Saída de dados
 
     printf("\n Informações da Primeira Carta \n");
@@ -67,6 +71,8 @@ int main() {
     printf("Área (em km²): %.2f\n", Area1);
     printf("PIB da Cidade: %.2f\n", PIB1);
     printf("Número de Pontos Turísticos: %d\n", Pontosturisticos1);
+    printf("Densidade Populacional: %.2f\n", Densidade1);
+    printf("Renda per Capita da Cidade: %.2f\n", Capita1);
 
     printf("\n Informações da Segunda Carta \n");
     printf("\n Estado: %s\n", Estado2);
@@ -76,6 +82,9 @@ int main() {
     printf("Área (em km²): %.2f\n", Area2);
     printf("PIB da Cidade: %.2f\n", PIB2);
     printf("Número de Pontos Turísticos: %d\n", Pontosturisticos2);
-
+    printf("Densidade Populacional: %.2f\n", Densidade2);
+    printf("Renda per Capita da Cidade: %.2f\n", Capita2);
+    
     return 0;
+    
 }
