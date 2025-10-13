@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
+// Desafio Super Trunfo - Cidades
 // Tema 3 - Lógica Mestre (Comparação com DOIS ATRIBUTOS e Menu Dinâmico)
 // Este código mantém tudo dos níveis anteriores e adiciona a comparação avançada:
 // ✅ Jogador escolhe 2 atributos diferentes via switch (menu dinâmico).
